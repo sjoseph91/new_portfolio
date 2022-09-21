@@ -1,25 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&family=Open+Sans&display=swap');
+
+:root{
+    --accent: rgb(71 10 85 / 81%);
+    --bs-light-rgb: white;
+}
+body{
+    box-sizing: border-box;
+}
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: inherit;
+}
 html{
     font-size: 16px;
+    font-family: "Noto Sans", "sans-serif";
 }
 
 main{
-    height: 100vh;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    position: relative;
 }
 
 nav{
     font-size: 1.4rem;
 }
+nav span{
+    font-weight: bold;
+}
 nav img{
     border-radius: 50%;
 }
-a{
+nav a{
     text-decoration: none;
     padding: 10px;
     color: black;
     font-weight: bold;
     margin: 0 15px;
 }
+/*Homepage*/
+.home{
+    background: linear-gradient(to right, rgba(245, 245, 245, .7), rgba(245, 245, 245, .7)),
+        url("./images/bg.svg");
+    background-position: center;
+}
+.home .hero{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90rem;
+    width: 92%;
+}
+.home h1{
+    text-align: center;
+    font-weight: 800;
+    font-size: 4rem;
+    margin-bottom: 3rem;
 
+}
+.home p{
+    text-align: center;
+    margin: auto;
+    max-width: 800px;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+.home button{
+    display: block;
+    margin: auto;
+    width: 10rem;
+    height: 4rem;
+    padding: .8rem;
+    border-radius: 22px;
+    background-color: var(--accent);
+}
+.home a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+
+}
+.home button:hover{
+    transform: scale(1.05);
+}
 @media only screen and (max-width: 768px ){
     a{
         padding: 7px;
