@@ -1,0 +1,32 @@
+html{
+    font-size: 16px;
+}
+
+main{
+    height: 100vh;
+}
+
+nav{
+    font-size: 1.4rem;
+}
+nav img{
+    border-radius: 50%;
+}
+a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+@media only screen and (max-width: 768px ){
+    a{
+        padding: 7px;
+        text-align: right;
+    }
+
+    navbar-nav{
+        text-align: right;
+    }
+}
