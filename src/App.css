@@ -2,7 +2,7 @@
 
 :root{
     --accent: rgb(71 10 85 / 81%);
-    --bs-light-rgb: white;
+    --bs-light-rgb: 250, 242, 254;
 }
 body{
     box-sizing: border-box;
@@ -21,8 +21,8 @@ html{
 }
 
 main{
+    margin-top: 90px;
     height: calc(100vh - 100px);
-    overflow: hidden;
     position: relative;
 }
 
@@ -42,6 +42,10 @@ nav a{
     font-weight: bold;
     margin: 0 15px;
 }
+.me-auto{
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
 /*Homepage*/
 .home{
     background: linear-gradient(to right, rgba(245, 245, 245, .7), rgba(245, 245, 245, .7)),
@@ -50,7 +54,7 @@ nav a{
 }
 .home .hero{
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 90rem;
@@ -70,26 +74,111 @@ nav a{
     font-size: 1.6rem;
     margin-bottom: 3rem;
 }
-.home button{
+.home button, .about button{
     display: block;
     margin: auto;
     width: 10rem;
     height: 4rem;
+    border: none;
+    box-shadow: -1px 1px 19px 1px rgba(13, 12, 12, 0.58);
     padding: .8rem;
     border-radius: 22px;
     background-color: var(--accent);
+    margin-bottom: 2rem;
 }
-.home a{
+.home a, .about a{
     text-decoration: none;
     color: white;
     letter-spacing: 1px;
     font-size: 1.4rem;
 
 }
-.home button:hover{
+.home button:hover, .about button:hover{
     transform: scale(1.05);
 }
+/* background colors for all other pages */
+.about,
+.projects,
+.contact {
+    background: rgb(215, 169, 251);
+        background: linear-gradient(198deg, rgba(215, 169, 251, 0.22452731092436973) 0%, rgba(254, 254, 254, 0.9640231092436975) 100%);
+        padding-top: 20px;
+}
+
+/*About Page */
+
+.about h1, .projects h1, .contact h1{
+    text-align: center;
+    margin-top: 2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
+.bar{
+    margin-top: 1rem;
+    margin: auto;
+    width: 60px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--accent);
+    margin-bottom: 3rem;
+}
+.info{
+    margin: auto;
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    gap: 10px;
+
+}
+.about h2{
+
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+.about p{
+    font-size: 1.2rem;
+    color: rgb(31, 31, 31);
+}
+.about .skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+}
+.about .skill{
+    padding: 1rem 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: rgba(153, 153, 153, .3);
+    margin: 5px;
+    color: #666;
+    border-radius: 6px;
+    
+}
+/*Projects Page */
+.projects{
+    padding: 2rem;
+}
+.projects .projects-container{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.project{
+    margin: 2rem;
+    border: 1px solid black;
+    box-shadow:rgb(31, 31, 31);
+}
+
 @media only screen and (max-width: 768px ){
+    .hero{
+        margin-top: 100px;
+    }
+    .hero h1{
+        font-size: 3rem;
+    }
     a{
         padding: 7px;
         text-align: right;
@@ -97,5 +186,20 @@ nav a{
 
     navbar-nav{
         text-align: right;
+    }
+    .info{
+        grid-template-columns: 1fr;
+    }
+    .about .skill{
+        padding: 1rem;
+        letter-spacing: 1px;
+    }
+    /*Projects*/
+    .projects-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects img{
+        max-width: 100%;
     }
 }

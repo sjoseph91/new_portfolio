@@ -6,7 +6,7 @@ import img from "../images/SJ_LOGO_CIRCLE.png"
 
 export default function Heading(){
     return (
-        <Navbar bg="light" expand="md" >
+        <Navbar bg="light" expand="md" fixed="top" >
             <Navbar.Brand href="/">
             <img
               src={img}
@@ -19,7 +19,7 @@ export default function Heading(){
           <Navbar.Brand>Sean Joseph</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto mx-auto">
+            <Nav className="me-auto ">
                 <Link to="/" >Home</Link>
                 <Link to="/about" >About</Link>
                 <Link to="/projects" >Projects</Link>
