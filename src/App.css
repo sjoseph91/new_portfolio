@@ -2,7 +2,7 @@
 
 :root{
     --accent: rgb(71 10 85 / 81%);
-    --bs-light-rgb: 250, 242, 254;
+    --bs-light-rgb: 255, 255, 254;
 }
 body{
     box-sizing: border-box;
@@ -46,11 +46,23 @@ nav a{
     margin-right: 0 !important;
     margin-left: auto !important;
 }
+/*Transition */
+@keyframes fadein{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+main{
+    animation-name: fadein;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
 /*Homepage*/
 .home{
+    
     background: linear-gradient(to right, rgba(245, 245, 245, .7), rgba(245, 245, 245, .7)),
-        url("./images/bg.svg");
-    background-position: center;
+        url("./images/bg.svg"); 
+    background-position: center; 
 }
 .home .hero{
     position: absolute;
@@ -74,10 +86,10 @@ nav a{
     font-size: 1.6rem;
     margin-bottom: 3rem;
 }
-.home button, .about button{
+.home button, .about button, .contact button{
     display: block;
     margin: auto;
-    width: 10rem;
+    width: 12rem;
     height: 4rem;
     border: none;
     box-shadow: -1px 1px 19px 1px rgba(13, 12, 12, 0.58);
@@ -86,14 +98,14 @@ nav a{
     background-color: var(--accent);
     margin-bottom: 2rem;
 }
-.home a, .about a{
+.home a, .about a, .contact button{
     text-decoration: none;
     color: white;
     letter-spacing: 1px;
     font-size: 1.4rem;
 
 }
-.home button:hover, .about button:hover{
+.home button:hover, .about button:hover, .contact button:hover{
     transform: scale(1.05);
 }
 /* background colors for all other pages */
@@ -103,6 +115,7 @@ nav a{
     background: rgb(215, 169, 251);
         background: linear-gradient(198deg, rgba(215, 169, 251, 0.22452731092436973) 0%, rgba(254, 254, 254, 0.9640231092436975) 100%);
         padding-top: 20px;
+    height: unset;
 }
 
 /*About Page */
@@ -168,9 +181,86 @@ nav a{
 }
 .project{
     margin: 2rem;
-    border: 1px solid black;
-    box-shadow:rgb(31, 31, 31);
+
+    box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.68);
+    border-radius: 6px;
 }
+@keyframes enlarge{
+    100%{transform: scale(1.1)}
+}
+.project:hover{
+    animation-name: enlarge;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.project .title{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.project .links{
+    display: flex;
+    justify-content: space-evenly;
+}
+.project a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--accent);
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+.project a:hover{
+    transform: scale(1.1);
+
+}
+.project .overlay p{
+    z-index: 10;
+    position: absolute;
+    max-width: 100%;
+    top: 30px;
+    left: 10px;
+
+}
+/*Contact Page */
+
+.contact p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.contact form{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    
+}
+.contact label, .contact input, .contact textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+}
+.contact input, .contact textarea{
+    background-color: #f2ecfb;
+    margin-bottom: 1rem;
+    text-indent: 5px;
+    border: none;
+    border-radius: 6px;
+}
+.contact textarea{
+    height: 8rem;
+}
+.contact button{
+    margin-top: 2rem;
+}
+
+
 
 @media only screen and (max-width: 768px ){
     .hero{
@@ -201,5 +291,9 @@ nav a{
     }
     .projects img{
         max-width: 100%;
+    }
+
+    .contact form{
+        margin: 1rem 1rem;
     }
 }

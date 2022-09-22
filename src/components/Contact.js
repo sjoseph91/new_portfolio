@@ -1,10 +1,14 @@
 import React from "react";
+import Form from "./Form"
 
 
 function Contact(){
     return (
         <main class="contact">
-            Contact
+            <h1>Contact</h1>
+            <div className="bar"></div>
+            <p>Reach out to me on LinkedIn, or contact me using the form below!</p>
+            <Form />
         </main>
     )
 }
