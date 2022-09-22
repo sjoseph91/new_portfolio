@@ -217,6 +217,9 @@ main{
     transform: scale(1.1);
 
 }
+.project .overlay{
+    position: relative;
+}
 .project .overlay p{
     z-index: 10;
     position: absolute;

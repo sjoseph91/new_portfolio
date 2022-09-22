@@ -15,6 +15,7 @@ export default function ProjectBox(props){
         setHovering(true);
     }
     function handleMouseLeave(e){
+        document.getElementById("description").textContent = "";
         setHovering(false);
     }
     
@@ -34,7 +35,7 @@ export default function ProjectBox(props){
         >
             <div className="imgContainer">
                 <div className="overlay"  >
-                    {hovering && <p>{description}</p>}
+                    <p id="description">{hovering && description}</p>
                     <img src={imgSrc} style={customStyle} alt="project"/>
                 </div>
             </div>
