@@ -43,8 +43,8 @@ export default function ProjectBox(props){
                 {title}
             </div>
             <div className="links">
-                <a href={liveLink}>Project</a>
-                <a href={githubLink}>Github</a>
+                <a href={liveLink} target="_blank">Project</a>
+                <a href={githubLink} target="_blank">Github</a>
             </div>
         </div>
     )
