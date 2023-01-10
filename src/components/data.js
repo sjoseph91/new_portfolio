@@ -1,5 +1,6 @@
 import tradingAppScreenshot from "../images/tradingAppScreenshot.png";
 import electionScreenshot from "../images/electionScreenshot.png";
+import paymentScreenshot from "../images/payment-screenshot.png";
 
 export const data = [
   {
@@ -11,18 +12,18 @@ export const data = [
     githubLink: "https://github.com/sjoseph91/TradingApp",
   },
   {
-    title: "2020 Election Finance Tracker",
+    title: "2020 Election Finance Tool",
     imgSrc: electionScreenshot,
     liveLink: "https://sjoseph91.github.io/electiontracker/",
     description: `Allows users to look up financial contributions to political candidates... Technology used:  React Router, TypeScript, OpenFEC API, and fundamental web technologies`,
     githubLink: "https://github.com/sjoseph91/electiontracker",
   },
-  // {
-  //   title: "Project 3",
-  //   imgSrc: "https://via.placeholder.com/250",
-  //   liveLink: "www.netflify.com",
-  //   description:
-  //     "Full stack CRUD application built with the MERN stack. Used React, React-Router, custom hooks, and mongoose",
-  //   githubLink: "www.github.com",
-  // },
+  {
+    title: "Interactive Payment Form",
+    imgSrc: paymentScreenshot,
+    liveLink: "https://sjoseph91.github.io/interactive-card-details-form/",
+    description:
+      "Interactive payment card form with built in client-side validation and live on-screen feedback",
+    githubLink: "https://github.com/sjoseph91/interactive-card-details-form",
+  },
 ];
