@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/new_portfolio/static/css/main.40d3e6a4.css",
-    "main.js": "/new_portfolio/static/js/main.5ac9d601.js",
+    "main.js": "/new_portfolio/static/js/main.0b378889.js",
     "static/media/electionScreenshot.png": "/new_portfolio/static/media/electionScreenshot.a6f894cff0a751994fdf.png",
     "static/media/tradingAppScreenshot.png": "/new_portfolio/static/media/tradingAppScreenshot.13c78b7f11fe83742eb7.png",
     "static/media/payment-screenshot.png": "/new_portfolio/static/media/payment-screenshot.4087599dd74d1449dec8.png",
@@ -9,10 +9,10 @@
     "static/media/bg.svg": "/new_portfolio/static/media/bg.9878fdbb0d963009b072.svg",
     "index.html": "/new_portfolio/index.html",
     "main.40d3e6a4.css.map": "/new_portfolio/static/css/main.40d3e6a4.css.map",
-    "main.5ac9d601.js.map": "/new_portfolio/static/js/main.5ac9d601.js.map"
+    "main.0b378889.js.map": "/new_portfolio/static/js/main.0b378889.js.map"
   },
   "entrypoints": [
     "static/css/main.40d3e6a4.css",
-    "static/js/main.5ac9d601.js"
+    "static/js/main.0b378889.js"
   ]
 }
