@@ -33,10 +33,10 @@ export default function ProjectBox(props) {
       </div>
       <div className="title">{title}</div>
       <div className="links">
-        <a href={liveLink} target="_blank">
+        <a href={liveLink} target="_blank" rel="noreferrer">
           Project
         </a>
-        <a href={githubLink} target="_blank">
+        <a href={githubLink} target="_blank" rel="noreferrer">
           Github
         </a>
       </div>
