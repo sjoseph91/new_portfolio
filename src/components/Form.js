@@ -5,9 +5,10 @@ export default function Form() {
     <div className="form">
       <iframe
         title="contact"
-        src="https://docs.google.com/forms/d/e/1FAIpQLSf5TdEnMbhnLB3U7iag-6N-LLm2q3-DM5pxGbmRTkHytC8MIA/viewform?embedded=true"
+        src="https://share.hsforms.com/1-O_0wdCdTPaeDJY3Ns0VhAe5dcw"
         width="640"
-        height="677"
+        height="500"
+        // height="677"
         scrolling="no"
       >
         Loading…
