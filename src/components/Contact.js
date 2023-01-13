@@ -15,6 +15,10 @@ function Contact() {
         >
           LinkedIn
         </a>
+        , check out my{" "}
+        <a href="https://github.com/sjoseph91" target="_blank" rel="noreferrer">
+          Github
+        </a>
         , or contact me using the form below!
       </p>
       <Form />
