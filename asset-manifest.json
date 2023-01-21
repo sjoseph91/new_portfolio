@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.886a023b.css",
-    "main.js": "/static/js/main.20bcc04c.js",
-    "static/media/electionScreenshot.png": "/static/media/electionScreenshot.a6f894cff0a751994fdf.png",
-    "static/media/tradingAppScreenshot.png": "/static/media/tradingAppScreenshot.13c78b7f11fe83742eb7.png",
-    "static/media/payment-screenshot.png": "/static/media/payment-screenshot.4087599dd74d1449dec8.png",
+    "main.css": "/static/css/main.dccc1027.css",
+    "main.js": "/static/js/main.79152a3a.js",
+    "static/media/election-tracker-screenshot.JPG": "/static/media/election-tracker-screenshot.7aa3067e0f7157782be9.JPG",
+    "static/media/payment-screenshot.JPG": "/static/media/payment-screenshot.178662d1342b6ef4e2db.JPG",
+    "static/media/stockScreenshot.JPG": "/static/media/stockScreenshot.311503a43c695a514892.JPG",
     "static/media/SJ_LOGO_CIRCLE.png": "/static/media/SJ_LOGO_CIRCLE.d0e2edb5c9b24cfeaec4.png",
     "static/media/bg.svg": "/static/media/bg.9878fdbb0d963009b072.svg",
     "index.html": "/index.html",
-    "main.886a023b.css.map": "/static/css/main.886a023b.css.map",
-    "main.20bcc04c.js.map": "/static/js/main.20bcc04c.js.map"
+    "main.dccc1027.css.map": "/static/css/main.dccc1027.css.map",
+    "main.79152a3a.js.map": "/static/js/main.79152a3a.js.map"
   },
   "entrypoints": [
-    "static/css/main.886a023b.css",
-    "static/js/main.20bcc04c.js"
+    "static/css/main.dccc1027.css",
+    "static/js/main.79152a3a.js"
   ]
 }
