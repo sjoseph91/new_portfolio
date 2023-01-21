@@ -1,6 +1,6 @@
-import tradingAppScreenshot from "../images/tradingAppScreenshot.png";
-import electionScreenshot from "../images/electionScreenshot.png";
-import paymentScreenshot from "../images/payment-screenshot.png";
+import tradingAppScreenshot from "../images/stockScreenshot.JPG";
+import electionScreenshot from "../images/election-tracker-screenshot.JPG";
+import paymentScreenshot from "../images/payment-screenshot.JPG";
 
 export const data = [
   {

@@ -215,7 +215,9 @@ main {
   animation-fill-mode: forwards;
 }
 .project img {
-  width: 100%;
+  max-width: 300px;
+  height: auto;
+  min-width: 200px;
   border-radius: 6px;
 }
 
