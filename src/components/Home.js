@@ -10,9 +10,17 @@ function Home() {
           A Web Developer with a serious passion for creating functional and
           dynamic user experiences. Check out some of my work!{" "}
         </p>
-        <button>
-          <Link to="/projects">Projects</Link>
-        </button>
+        <div className="button-group">
+          <button>
+            <Link to="/about">About</Link>
+          </button>
+          <button>
+            <Link to="/projects">Projects</Link>
+          </button>
+          <button>
+            <Link to="/contact">Contact</Link>
+          </button>
+        </div>
       </div>
     </main>
   );
